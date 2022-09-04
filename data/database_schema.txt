@@ -1,0 +1,35 @@
+CREATE TABLE IF NOT EXISTS "fsq_sql" (
+"index" TEXT,
+  "name" TEXT,
+  "id" INTEGER,
+  "address" TEXT,
+  "country" TEXT,
+  "cros[?2004l
+
+EXT,
+  "formatted_address" TEXT,
+  "locality" TEXT,
+  "postcode" TEXT,
+  "region" TEXT,
+  "category" TEXT,
+  "fsq_id" TEXT,
+  "address_extended" TEXT
+);
+CREATE INDEX "ix_fsq_sql_index"ON "fsq_sql" ("index");
+CREATE TABLE IF NOT EXISTS "yelp_sql" (
+"index" TEXT,
+  "name" TEXT,
+  "rating" REAL,
+  "alias" TEXT,
+  "title" TEXT,
+  "address1" TEXT,
+  "address2" TEXT,
+  "address3" TEXT,
+  "city" TEXT,
+  "zip_code" TEXT,
+  "country" TEXT,
+  "state" TEXT,
+  "display_address" TEXT,
+  "street" TEXT
+);
+CREATE INDEX "ix_yelp_sql_index"ON "yelp_sql" ("index");
